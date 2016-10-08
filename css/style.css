@@ -1,0 +1,398 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+}
+
+.container {
+    width: 980px; 
+    margin: 0 auto;
+}
+
+main {
+    padding: 20px 0 80px;
+    min-height: 450px; 
+    background: #fffaf0;
+    border-radius: 10px;
+}
+
+header {
+    background: #191970;
+    border-bottom: 2px solid #000000;
+    border-radius: 5px;
+}
+
+header .title {
+    float: left; 
+    margin: 0 0 0 5px; 
+    width: 160px; 
+    height: 125px;
+    line-height: 30px;
+}
+
+header .title a {
+    display: block;
+    text-decoration: none;
+    color: #fffaf0;
+    font-style: italic;
+    font-size: 36px;
+    margin-top: 25px;
+    letter-spacing: 1px;
+}
+
+header .title a:hover, header .title a:active {
+    color: #ffdead;
+}
+
+header nav {
+    float: right; 
+    top: 15px;
+    position: relative;
+}
+
+header nav li {
+    display: inline-block; 
+    list-style: none;
+}
+
+header nav li a {
+    color: #fffaf0;
+    text-decoration: none;
+    display: block;
+    line-height: 95px;
+    padding: 10px 0 0;
+    margin: 0 0 0 50px;
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header nav li.on a {
+    text-decoration: underline;
+}
+
+header nav li a:hover, header .nav li a:active {
+    color: #ffdead;
+}
+
+header nav li.musicians a {
+    padding-left: 32px;
+    position: relative;
+}
+
+header nav li.musicians a:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    font-size: 30px;
+    top: -20px;
+    left: 70px;
+    content: "\f001";
+}
+
+header nav li.groups a {
+    padding-left: 32px;
+    position: relative;
+}
+
+header nav li.groups a:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    font-size: 30px;
+    top: -20px;
+    left: 40px;
+    content: "\f001 \f001 \f001";
+}
+
+header nav li.suggest a {
+    padding-left: 32px;
+    position: relative;
+}
+
+header nav li.suggest a:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    font-size: 30px;
+    top: -20px;
+    left: 70px;
+    content: "\f0e5";
+}
+
+header:after {
+    content:"";
+    height:0;
+    display:block;
+    clear:both;
+}
+
+
+section.page {
+    padding: 34px 0;
+    background: #fffaf0;
+}
+
+section.page h1 {
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.6;
+    font-weight: normal;
+}
+
+section.page p {
+    width: 500px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    font-size: 18px;
+}
+
+section.page .header {
+    font-size: 36px;
+    text-align: left;
+}
+
+section.page:after {
+    content:"";
+    display:block;
+    visibility:hidden;
+    height: 0;
+    clear:both;
+}
+
+section.catalog {
+    padding-bottom: 42px;
+}
+
+section.catalog h2 {
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.6;
+    font-weight: 500;
+    padding-top: 30px;
+}
+
+section.catalog ul.items {
+    margin: 0 0 -17px 0; 
+    padding: 0; 
+    width: 997px;
+}
+
+section.catalog ul.items li {
+    display: inline-block;
+    list-style: none;
+    width: 204px;
+    text-align: center;
+    padding: 14px;
+    margin: 0 0 17px 17px;
+    position: relative;
+    left: -17px;
+}
+section.catalog ul.items li a:hover:after {
+    content: '♬';
+    font-size: 30px; 
+    position: absolute; 
+    top: 50px; 
+    right: 30px; 
+    color: #551a8b;
+}
+
+section.catalog ul.items li a {
+    background: #fffaf0;
+    display: block;
+    padding: 30px 0 10px;
+    text-decoration: none;
+}
+
+section.catalog ul.items li a:hover {
+    color: #551a8b;
+}
+
+section.catalog ul.items li img {
+    width: 190px;
+    border: 6px solid #e2e2d0;
+}
+
+section.catalog ul.items li p {
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+    font-size: 18px;
+    color: #551a8b;
+}
+
+
+.breadcrumbs {
+    font-size: 20px;
+    font-weight: normal;
+    padding: 14px 0 50px;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #3888c2;
+  }
+
+.media-picture {
+    float: left;
+    width: 400px;
+    text-align: center;
+    border: 1px solid #e0e0d1;
+    padding: 14px;
+    background: #f5f5ef;
+    margin-bottom: 40px;
+}
+
+.media-picture span {
+    background: #fffaf0;
+    display: block;
+    width: 100%;
+    padding: 36px 0 61px;
+}
+
+.media-picture img {
+    width: 292px;
+}
+
+.media-details {
+    width: 460px;
+    float: right;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+}
+
+th {
+    padding-right: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+tr:last-of-type > td:last-of-type {
+    font-style: italic;
+}
+
+
+form {
+    width: 500px; 
+    margin: 34px auto;
+    font-size: 18px;
+}
+
+form tr {
+    text-align: left;
+}
+
+form table {
+    width: 475px; 
+    margin-bottom: 16px;
+}
+
+form th {
+    width: 150px;
+    vertical-align: middle;
+    padding: 8px;
+}
+
+form td {
+    padding: 15px 15px;
+}
+
+form td select,
+form td input,
+form td textarea {
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #a5a5a5;
+}
+
+form td select {
+    width: 108%;
+}
+
+form input[type="submit"] {
+    width: 475px;
+    text-align: center;
+    border: 0;
+    background: #3888c2;
+    color: #fff;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding: 14px 0 16px;
+    width: 500px;
+}
+  
+form input[type="submit"]:hover {
+    background: #358dce;
+    cursor: pointer;
+  }
+
+.page p.message {
+    background: #ffeca4;
+    border: 1px solid #f16702;
+    padding: 1em;
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer {
+    background: #f5f5dc;
+    border-top: 3px solid #000000;
+    padding: 42px 0;
+    color: #999999;
+}
+
+footer ul {
+    margin: 0; 
+    padding: 0; 
+    float: left;
+}
+
+footer ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+footer ul li:after {
+    content:" | "
+}
+
+footer ul li:last-child:after {
+    content:"";
+}
+
+footer p {
+    margin: 0; 
+    font-size: 16px;
+}
+
+footer a {
+    text-decoration: none; 
+    color: #000000;
+    margin: 0 10px;
+}
+
+footer li:first-child a {
+    margin-left: 4px;
+}
+
+footer a:hover, .footer a:active {
+    text-decoration: underline;
+}
