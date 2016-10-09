@@ -5,14 +5,17 @@ html {
     overflow-x: hidden;
 }
 
+
 body {
     font-family: 'EB Garamond', serif;
 }
+
 
 .container {
     width: 980px; 
     margin: 0 auto;
 }
+
 
 main {
     padding: 20px 0 80px;
@@ -20,6 +23,8 @@ main {
     background: #fffaf0;
     border-radius: 10px;
 }
+
+
 
 header {
     background: #191970;
@@ -131,6 +136,7 @@ header:after {
 }
 
 
+
 section.page {
     padding: 34px 0;
     background: #fffaf0;
@@ -150,6 +156,17 @@ section.page p {
     font-size: 18px;
 }
 
+section.page p.message {
+    background: #ffeca4;
+    border: 1px solid #f16702;
+    padding: 1em;
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 section.page .header {
     font-size: 36px;
     text-align: left;
@@ -162,6 +179,7 @@ section.page:after {
     height: 0;
     clear:both;
 }
+
 
 section.catalog {
     padding-bottom: 42px;
@@ -225,6 +243,7 @@ section.catalog ul.items li p {
 }
 
 
+
 .breadcrumbs {
     font-size: 20px;
     font-weight: normal;
@@ -235,6 +254,7 @@ section.catalog ul.items li p {
     text-decoration: none;
     color: #3888c2;
   }
+
 
 .media-picture {
     float: left;
@@ -265,6 +285,7 @@ section.catalog ul.items li p {
 }
 
 
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -282,19 +303,20 @@ tr:last-of-type > td:last-of-type {
 }
 
 
+
 form {
     width: 500px; 
     margin: 34px auto;
     font-size: 18px;
 }
 
-form tr {
-    text-align: left;
-}
-
 form table {
     width: 475px; 
     margin-bottom: 16px;
+}
+
+form tr {
+    text-align: left;
 }
 
 form th {
@@ -337,16 +359,6 @@ form input[type="submit"]:hover {
     cursor: pointer;
   }
 
-.page p.message {
-    background: #ffeca4;
-    border: 1px solid #f16702;
-    padding: 1em;
-    width: 500px;
-    text-align: center;
-    font-size: 18px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 
 footer {
@@ -354,6 +366,21 @@ footer {
     border-top: 3px solid #000000;
     padding: 42px 0;
     color: #999999;
+}
+
+footer p {
+    margin: 0; 
+    font-size: 16px;
+}
+
+footer a {
+    text-decoration: none; 
+    color: #000000;
+    margin: 0 10px;
+}
+
+footer a:hover, .footer a:active {
+    text-decoration: underline;
 }
 
 footer ul {
@@ -374,25 +401,10 @@ footer ul li:after {
     content:" | "
 }
 
-footer ul li:last-child:after {
-    content:"";
-}
-
-footer p {
-    margin: 0; 
-    font-size: 16px;
-}
-
-footer a {
-    text-decoration: none; 
-    color: #000000;
-    margin: 0 10px;
-}
-
-footer li:first-child a {
+footer ul li:first-child a {
     margin-left: 4px;
 }
 
-footer a:hover, .footer a:active {
-    text-decoration: underline;
+footer ul li:last-child:after {
+    content:"";
 }
