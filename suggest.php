@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email_body .= "Details " . $details . "\n";
         
         $mail->setFrom($email, $name);
-        $mail->addAddress("zokigorgiev83@gmailcom", "Zoran Gorgiev");
+        $mail->addAddress("zokigorgiev83@gmail.com", "Zoran Gorgiev");
         
         $mail->isHTML(false);
         
